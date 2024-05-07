@@ -5,7 +5,7 @@ export interface TodosState {
     complete: boolean;
 }
 
-const initialState: TodosState[] = JSON.parse(localStorage.getItem('todos') || '') ;
+const initialState: TodosState[] = JSON.parse(localStorage.getItem('todos') || '[]') ;
 
 export const todosSlice = createSlice({
     name: 'todos',
